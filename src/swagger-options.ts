@@ -8,6 +8,10 @@ const swaggerOptions = {
     },
     servers: [
       { description: "Local", url: `http://localhost:${process.env.PORT}/v1` },
+      {
+        description: "Production",
+        url: `https://simple-ecommerce-api-zvzk.onrender.com/v1`,
+      },
     ],
   },
   apis: ["./src/routes/**/*.ts"],
